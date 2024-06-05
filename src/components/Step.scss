@@ -1,0 +1,52 @@
+.StepContainer {
+    max-width: 80%;
+    width: 80%;
+    // height: 100px;
+    // background-color: green;
+    display: flex;
+    flex-direction: row;
+    .Number {
+        width: 10%;
+        // background-color: blue;
+        padding-top: 10px;
+        padding-left: 20px;
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            color: #1b59f8;
+        }
+    }
+    
+    .Content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding-bottom: 20px;
+        // background-color: red;#999999
+        border-left: 2px solid #bababa; /* Border bên trái */
+        border-bottom: 1px solid #bababa;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: -6px; 
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background-color: #1b59f8;
+            border-radius: 50%; /* Tạo hình dạng chấm tròn */
+        }
+        .Title {
+            padding-top: 10px;
+            padding-left: 20px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #1b59f8;
+        }
+        .ListContent {
+            width: 100%;
+        }
+    }
+}
+
