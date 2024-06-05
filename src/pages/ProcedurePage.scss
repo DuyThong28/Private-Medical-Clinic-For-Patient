@@ -3,54 +3,56 @@
     width: 100%;
     overflow-y: auto;
     position: relative;
-}
-
-.header {
-    position: relative;
-    background-image: url('./src/assets/medical-clinic.jpg');
-    background-size: cover;
-    background-position: center; 
-    height: 200px; 
-    width: 100%;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-
-    .header-text {
+    .header {
         position: relative;
-        z-index: 2;
-        color: white;
-        font-size: 30px;
-        font-weight: 500;
+        background-image: url('./src/assets/medical-clinic.jpg');
+        background-size: cover;
+        background-position: center; 
+        height: 200px; 
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    
+        .header-text {
+            position: relative;
+            z-index: 2;
+            color: white;
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+
+    .body {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ul {
+            list-style: none; /* Loại bỏ biểu tượng mặc định */
+        }
+        li {
+            margin-left: 20px;
+        }
+        li:before {
+            content: ">"; /* Sử dụng pseudo-element :before để thêm biểu tượng ">" */
+            margin-right: 5px; /* Khoảng cách giữa biểu tượng và nội dung của mục */
+        }
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3); 
+        z-index: 1;
     }
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); 
-    z-index: 1;
-}
 
-.body {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    ul {
-        list-style: none; /* Loại bỏ biểu tượng mặc định */
-    }
-    li {
-        margin-left: 20px;
-    }
-    li:before {
-        content: ">"; /* Sử dụng pseudo-element :before để thêm biểu tượng ">" */
-        margin-right: 5px; /* Khoảng cách giữa biểu tượng và nội dung của mục */
-    }
-}
+
+
