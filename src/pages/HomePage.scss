@@ -1,0 +1,122 @@
+.contact{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 98px;
+    right: 1.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+}
+
+.body-background{
+    background-image: url("https://resource.medpro.com.vn/static/images/umc/web/banner_desktop.png?t=48062.24342327864&quot");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 37%;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.home-body{
+    padding: 80px 15%;
+    border-bottom: 1px solid #dfe3eb;
+}
+
+.action-item{
+    padding: 20px 15px;
+    border: 1px solid #bfd5de;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.action-item:hover{
+    transform: translateY(-2px);
+    border-color: #1b59f8;
+}
+
+.action-item + .action-item{
+    margin-left: 30px;
+}
+
+.btn-action{
+    padding: 8px 40px;
+    color: #fff; 
+    background-color:#1b59f8;
+    border-radius: 4px; 
+    border: none; 
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-action:hover{
+    transform: translateY(-2px);
+}
+
+.support-title{
+    border-radius: 3px;
+    border: 1px solid #e3e6f0;
+    padding: 6px 24px;
+    color: #627792;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 4px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.support-methods{
+    color: #12263f;
+    font-size: 1.625rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.support-item{
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    width: 33.33%;
+    padding: 40px 0;
+    border: 1px solid #dfe3eb;
+    border-radius: 4px;
+}
+
+.support-item:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .09);
+}
+
+.support-item + .support-item{
+    margin-left: 2rem;
+}
+
+.support-name,
+.support-link{
+    font-size: 1rem;
+    color: #333;
+    font-weight: 400;
+}
+
+.support-link:hover{
+    color:#1b59f8;
+}
+
+.home-footer{
+    background-color: #f8fafd;
+    padding: 2rem 15%;
+    color: #000;
+}
+
+.web-info,
+.footer-info{
+    width: 40%;
+    padding-left: 1rem;
+}
