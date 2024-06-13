@@ -1,0 +1,42 @@
+.navbar-navigation {
+  .nav-bar-active {
+    color: #2d2c2c;
+    font-weight: bold;
+    border-radius: 2rem;
+    height: fit-content;
+    &:hover {
+      background-color: rgb(167, 202, 255);
+      color: #000000;
+    }
+  }
+
+  .nav-bar {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgb(31 107 219);
+    height: fit-content;
+    border-radius: 2rem;
+  }
+}
+
+.nav-bar-container {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  background: linear-gradient(90deg, #ffffff, #ffffff 53%, #ffffffc9 100%);
+}
+
+.website-title-2 {
+  background: linear-gradient(90deg, #0048b2, #3b8aff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &:hover {
+    background: linear-gradient(90deg, #003788, #3272d2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
