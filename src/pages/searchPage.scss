@@ -1,0 +1,46 @@
+.search-container {
+  min-height: 80%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  background-image: url("../assets/bg-booking-9.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  .search-section {
+    width: 35% !important;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .result-section {
+    width: 80%;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .appointment-navigation {
+    .nav-bar-active {
+      color: #0048b2 !important;
+      font-weight: bold !important;
+      background-color: rgb(255, 255, 255);
+      border-radius: 0rem;
+    }
+
+    .nav-bar {
+      color: #555555 !important;
+      font-weight: bold !important;
+      background-color: rgb(255, 255, 255);
+      border-radius: 0rem;
+    }
+  }
+}

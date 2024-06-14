@@ -32,13 +32,37 @@ export default function BookingPage() {
     event.preventDefault();
     const form = event.currentTarget;
 
-    if (form.checkValidity() === false) {
+    if (!validateForm(form)) {
       setValidated(true);
       return;
     }
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
     bookingMutate.mutate(data);
+  }
+
+  function validateForm(form) {
+    for (const element of form.elements) {
+      if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+        element.value = element.value.trim();
+      }
+    }
+
+    return form.checkValidity();
+  }
+
+  function validateFormTrimStart(form) {
+    for (const element of form.elements) {
+      if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+        element.value = element.value.trimStart();
+      }
+    }
+  }
+
+  function changeFormTrimStartHandler(event) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    validateFormTrimStart(form);
   }
 
   return (
@@ -48,11 +72,14 @@ export default function BookingPage() {
     >
       <ToastContainer />
       <div className="booking-container">
-        <div className="booking-section shadow-lg">
+        <div
+          className="booking-section shadow-lg"
+        >
           <Form
             ref={formRef}
             onSubmit={submitHandler}
             noValidate
+            onChange={changeFormTrimStartHandler}
             validated={validated}
             className="d-flex flex-column gap-1"
           >
@@ -145,7 +172,7 @@ export default function BookingPage() {
               ></input>
             </div>
             <div className="row mt-3">
-              <button className="btn btn-primary" type="submit">
+              <button className="btn btn-primary shadow" type="submit">
                 Đặt lịch
               </button>
             </div>

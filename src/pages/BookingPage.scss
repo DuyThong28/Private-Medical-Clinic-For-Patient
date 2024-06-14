@@ -1,16 +1,21 @@
 .booking-container {
   height: 80%;
   width: 100%;
-  border: 1px solid red;
   justify-content: flex-end;
   display: flex;
   flex-direction: row;
   margin-top: 4rem;
+  background-image: url("../assets/bg-booking-9.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   .booking-section {
     width: 35% !important;
+    background-color: white;
     align-items: center;
     margin: auto 5rem auto 0;
     padding: 2rem;
     border-radius: 12px;
   }
 }
+
