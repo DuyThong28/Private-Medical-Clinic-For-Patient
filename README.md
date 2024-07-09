@@ -1,5 +1,6 @@
 # Private Medical Clinic For Booking
-![image](https://github.com/DuyThong28/Private-Medical-Clinic-For-Patient/assets/116278919/929bee71-3823-4483-9ccf-0502b9cae97e)
+![image](https://github.com/DuyThong28/Private-Medical-Clinic-For-Patient/assets/116278919/99ef50aa-c0a6-4556-b232-2d8c8a4f9be8)
+
 
 
 
