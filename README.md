@@ -9,8 +9,13 @@
 
 # Features
 <ul>
-  <li>Booking appointment with chatbot and website.</li>
-  <li>Search for patient infomation with phone OTP confirmation.</li>
+  <li>Book appointment with chatbot.</li>
+  <li>Book appointmnet with form.</li>
+  <li>Search for patient infomation with phone OTP confirmation:
+  <ul><li>Patient profile</li>
+  <li>Examination history</li>
+  <li>Upcoming appointment</li></ul></li>
+  <li>Display booking tutorial.</li>
 </ul>
 
 
